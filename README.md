@@ -94,6 +94,30 @@ WhatsApp-UI-clone/
 ├── README.md
 ├── LICENSE
 └── ...
+# Brief Overview of the project structure
+
+app/src/main/java/com/mitchelkenn00/mitchyken/
+├── data/
+│   ├── local/
+│   │   ├── dao/              # Room DAOs
+│   │   ├── entity/           # Room Entities
+│   │   ├── mapper/           # Entity-Domain mappers
+│   │   └── AppDatabase.kt    # Room Database
+│   ├── repository/           # Repository implementations
+│   └── source/
+│       ├── local/            # Local data source
+│       └── remote/           # Firebase auth service
+├── domain/
+│   ├── model/                # Domain models
+│   ├── repository/           # Repository interfaces
+│   └── usecase/              # Business logic use cases
+└── presentation/
+    ├── ui/
+    │   ├── components/       # Reusable UI components
+    │   ├── screens/          # App screens
+    │   └── theme/            # Material 3 theme
+    ├── viewmodel/            # ViewModels
+    └── MainActivity.kt       # Entry point
 ```
 
 ---
